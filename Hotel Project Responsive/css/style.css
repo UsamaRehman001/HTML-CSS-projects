@@ -1,0 +1,284 @@
+/* Reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* =========> Utility classes */
+.container {
+   margin: auto; /*it will make it center */
+   max-width: 1200px; /* using it to make it some how responsive */
+   overflow: auto; /* to extend the background when width exceed from 1100px */
+   padding: 0 20px;
+}
+.text-primary {
+   color: #f7c08a;
+}
+.btn {
+   display: inline-block;
+   font-size: 18px;
+   color: white;
+   background-color: #333;
+   padding: 13px 20px;
+   border: none;
+   cursor: pointer;
+   margin-top: 20px;
+}
+.btn:hover {
+   color: black;
+   background: #f7c08a;
+}
+.btn-light {
+   background: #f4f4f4;
+   color: #333;
+}
+.bg-dark {
+   background: #333;
+   color: white;
+}
+.bg-primary {
+   color: #333;
+   background: #f7c08a;
+}
+.clr {
+   clear: both;
+}
+.l-heading {
+   font-size: 40px;
+}
+
+/* PAdding utility class  */
+.p-y1 {
+   padding: 10px 0;
+}
+.p-y2 {
+   padding: 20px 0;
+}
+.p-y3 {
+   padding: 30px 0;
+}
+
+/* ================> Main STyles <============= */
+html,
+body {
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   line-height: 1.7em;
+}
+a {
+   text-decoration: none;
+   color: #333;
+}
+h1 {
+   padding-bottom: 20px;
+}
+
+/* => NAvbar */
+#navbar {
+   background: #333;
+   /* color: #fff; */ /*need to be applied specifical tags will not work for a nav tag */
+   overflow: auto; /* so background must show */
+}
+#navbar a {
+   color: #fff;
+}
+.logo {
+   float: left;
+   padding: 20px 0px;
+   /* padding-left: 20px; */
+}
+#navbar ul {
+   list-style: none;
+   float: right;
+   /* padding-right: 20px; */
+}
+#navbar ul li {
+   /* display: inline; */
+   float: left;
+   padding: 0px 15px;
+}
+#navbar ul li a {
+   display: block;
+   padding: 20px;
+}
+#navbar ul li a:hover,
+#navbar ul li a.home {
+   background: #444;
+   color: #f7c08a;
+}
+
+/* Show case CSS */
+#showcase {
+   background: url(../img/showcase.jpg) no-repeat center center/cover;
+   height: 600px;
+}
+#showcase .showcase-content {
+   text-align: center;
+   padding-top: 170px;
+   color: white;
+}
+#showcase .showcase-content h1 {
+   font-size: 50px;
+   line-height: 1.2em;
+}
+#showcase .showcase-content p {
+   font-size: 20px;
+   line-height: 1.7em;
+   /* margin-bottom: 20px; */
+}
+
+/* Home Info  */
+#home-info {
+   height: 500px;
+}
+#home-info .info-img {
+   float: left;
+   width: 50%;
+   background: url("../img/photo-1.jpg") no-repeat;
+   min-height: 100%;
+}
+#home-info .home-info-content {
+   float: right;
+   width: 50%;
+   height: 100%;
+   text-align: center;
+   padding: 115px 30px;
+   overflow: hidden; /* to avoid any scrollbar in smaller screen */
+}
+#home-info .home-info-content p {
+   margin-bottom: 10px;
+}
+
+/* Features Section */
+/* #features {
+   display: inline-block;
+} */
+.box {
+   float: left;
+   width: 33.3%;
+   padding: 50px;
+   text-align: center;
+}
+.box i {
+   margin-bottom: 10px;
+}
+.box p {
+   margin-top: 15px;
+}
+
+/* FOoter */
+#main-footer {
+   text-align: center;
+   background: #444;
+   color: #fff;
+   padding: 20px;
+}
+
+/* =============>>> ABOUT SEction <<<============ */
+/* Note this navbar is same as of HOME page
+Code is written again just for sake of practice */
+
+#about-nav {
+   background: #333;
+   overflow: auto;
+}
+#about-nav a {
+   color: white;
+}
+#about-nav h1 {
+   float: left;
+   padding: 20px 0px;
+}
+#about-nav ul {
+   float: right;
+   text-decoration: none;
+}
+#about-nav ul li {
+   float: left;
+   list-style: none;
+   padding: 0px 15px;
+}
+#about-nav ul li a {
+   display: block;
+   padding: 20px;
+}
+#about-nav ul li a:hover,
+#about-nav ul li a#about {
+   background: #444;
+   color: #f7c08a;
+}
+
+/* About section of about.html */
+/* #about-info {
+   float: left;
+} */
+#about-info {
+   /* height: 500px; */
+   align-items: center;
+}
+#about-info .info-left {
+   float: left;
+   width: 50%;
+   min-height: 100%;
+}
+#about-info .info-right {
+   float: right;
+   width: 50%;
+   min-height: 100%;
+}
+#about-info .info-right img {
+   display: block;
+   margin: auto;
+   width: 70%;
+   border-radius: 20%;
+}
+
+/* --------> TEstimonials <------- */
+#review-head {
+   padding-bottom: 40px;
+   color: #fff;
+   text-align: center;
+}
+#testimonials {
+   height: 600px;
+   background: url(/img/test-bg.jpg) no-repeat center center/cover;
+   padding-top: 100px;
+}
+#testimonials .testimonial {
+   padding: 20px;
+   margin-bottom: 40px;
+   opacity: 0.9;
+}
+#testimonials .testimonial img {
+   width: 84px;
+   float: left;
+   margin-right: 20px;
+   border-radius: 50%;
+}
+
+/* =============>>> Contact SEction <<<============ */
+#contact-form p {
+   margin: 20px 0px;
+   font-size: 18px;
+}
+#contact-form .form-group {
+   margin-bottom: 20px;
+}
+#contact-form .form-group label {
+   display: block;
+   margin-bottom: 5px;
+}
+#contact-form .form-group input,
+#contact-form .form-group textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px #ddd solid;
+}
+#contact-form .form-group textarea {
+   height: 200px;
+}
+#contact-form .form-group input:focus,
+#contact-form .form-group textarea:focus {
+   outline: none;
+   border-color: #f7c08a;
+}
