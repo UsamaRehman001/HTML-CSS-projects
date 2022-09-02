@@ -1,0 +1,98 @@
+.logo {
+   float: none;
+   text-align: center;
+}
+
+@media (max-width: 761px) and (min-width: 406px) {
+   #navbar ul {
+      float: none;
+      text-align: center;
+   }
+   #navbar ul li {
+      float: none;
+      display: inline-block;
+   }
+   #navbar ul li a {
+      padding: 15px;
+   }
+}
+@media (max-width: 406px) {
+   #navbar ul {
+      float: none;
+      text-align: center;
+   }
+   #navbar ul li {
+      float: none;
+      display: inline-block;
+   }
+   #navbar ul li {
+      padding: 0px 10px;
+   }
+   #navbar ul li a {
+      padding: 10px;
+   }
+}
+
+#showcase {
+   height: 100%;
+}
+#showcase .showcase-content {
+   padding: 90px 0px;
+}
+/* Home editing for mobile */
+#home-info {
+   height: 550px;
+}
+#home-info .info-img {
+   display: none;
+}
+#home-info .home-info-content {
+   float: none;
+   width: 100%;
+}
+@media (max-width: 338px) {
+   #home-info {
+      height: 600px;
+   }
+   #home-info .home-info-content {
+      padding: 90px 30px;
+   }
+}
+
+/* Feature section */
+.box {
+   float: none;
+   width: 100%;
+}
+
+/* About modifications */
+#about-info .info-left,
+#about-info .info-right {
+   float: none;
+   width: 100%;
+}
+#about-info .info-right {
+   margin-top: 25px;
+}
+#about-info .info-right img {
+   display: block;
+   margin: auto;
+   width: 90%;
+   border-radius: 15%;
+}
+@media (max-width: 416px) {
+   .l-heading {
+      text-align: center;
+      font-size: 35px;
+   }
+   #about-info {
+      /* height: 500px; */
+      align-items: center;
+      padding: 35px 0px;
+   }
+}
+
+/* Contact */
+#contact-info .box {
+   border-bottom: #444 dotted 2px;
+}

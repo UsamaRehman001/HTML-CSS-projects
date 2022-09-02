@@ -175,35 +175,10 @@ h1 {
 }
 
 /* =============>>> ABOUT SEction <<<============ */
-/* Note this navbar is same as of HOME page
-Code is written again just for sake of practice */
+/* only to highlight the about link when it is clicked*/
 
-#about-nav {
-   background: #333;
-   overflow: auto;
-}
-#about-nav a {
-   color: white;
-}
-#about-nav h1 {
-   float: left;
-   padding: 20px 0px;
-}
-#about-nav ul {
-   float: right;
-   text-decoration: none;
-}
-#about-nav ul li {
-   float: left;
-   list-style: none;
-   padding: 0px 15px;
-}
-#about-nav ul li a {
-   display: block;
-   padding: 20px;
-}
-#about-nav ul li a:hover,
-#about-nav ul li a#about {
+#navbar ul li a:hover,
+#navbar ul li a#about {
    background: #444;
    color: #f7c08a;
 }
@@ -215,6 +190,7 @@ Code is written again just for sake of practice */
 #about-info {
    /* height: 500px; */
    align-items: center;
+   padding: 50px 0px;
 }
 #about-info .info-left {
    float: left;
@@ -240,7 +216,7 @@ Code is written again just for sake of practice */
    text-align: center;
 }
 #testimonials {
-   height: 600px;
+   height: 100%;
    background: url(/img/test-bg.jpg) no-repeat center center/cover;
    padding-top: 100px;
 }
@@ -257,6 +233,12 @@ Code is written again just for sake of practice */
 }
 
 /* =============>>> Contact SEction <<<============ */
+#navbar ul li a:hover,
+#navbar ul li a#contact {
+   background: #444;
+   color: #f7c08a;
+}
+
 #contact-form p {
    margin: 20px 0px;
    font-size: 18px;
