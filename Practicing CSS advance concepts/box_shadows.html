@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Box Shadows</title>
+      <style>
+         .container {
+            display: flex;
+         }
+         .box {
+            padding: 1rem;
+            margin: 1rem;
+            background: rgb(201, 99, 62);
+            color: white;
+            /* offset-x | offset-y | color */
+            box-shadow: 10px 10px teal;
+            /* offset-x | offset-y | blur radius | color */
+            box-shadow: 10px 10px 20px teal;
+            /* negative values will add shadow toward left and top (x and y) */
+
+            /* offset-x | offset-y | blur radius | spread radius | color  */
+            box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+            /* offset-x | offset-y | blur radius | spread radius | color  */
+            box-shadow: inset -3px -3px teal;
+            /* Multiple shadows */
+            box-shadow: 3px 3px 10px rgb(9, 44, 44),
+               -3px -3px 10px rgb(251, 251, 9);
+         }
+         .box:hover {
+            opacity: 0.8;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="box">
+            <h3>Heading</h3>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               Consequatur quia doloremque incidunt. Enim, voluptatibus!
+               Perferendis fugit similique tempore dolor quisquam!
+            </p>
+         </div>
+         <div class="box">
+            <h3>Heading</h3>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               Consequatur quia doloremque incidunt. Enim, voluptatibus!
+               Perferendis fugit similique tempore dolor quisquam!
+            </p>
+         </div>
+         <div class="box">
+            <h3>Heading</h3>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               Consequatur quia doloremque incidunt. Enim, voluptatibus!
+               Perferendis fugit similique tempore dolor quisquam!
+            </p>
+         </div>
+      </div>
+   </body>
+</html>
