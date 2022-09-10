@@ -1,0 +1,22 @@
+:root {
+   --primary-color: #c72727;
+   --secondary-color: #f99500;
+   --light-color: #f3f3f3;
+   --dark-color: #333;
+   --max-width: 1200px;
+}
+.category {
+   --sports-color: #f99500;
+   --ent-color: #a66bbe;
+   --tech-color: #009cff;
+}
+
+display: grid;
+grid-template-columns: 5fr 3fr 2fr;
+
+when using grid to set an grid item position use this
+justify-self: end;
+
+position:relative rakh rhy ku
+
+before waly ko jb position absolute kry gy to wo fist relative k accordingly position hoga so we want it to be positioned absolute, relative to showcase
