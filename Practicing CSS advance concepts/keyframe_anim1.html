@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Keyframe animation 1</title>
+      <style>
+         body {
+            background-color: #000;
+         }
+         .box {
+            background: #fff;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: animate1;
+            /* will be representing the time in which animation will be complete */
+            animation-duration: 5s;
+            /* it will iterate animation, make it happens multiple times */
+            animation-iteration-count: 1;
+            /* it we want to animate but we didn't want the animated box to return to its original position we will set its fill mode to forwards */
+            animation-fill-mode: forwards;
+            /* delay the start of animation */
+            animation-delay: 2s;
+            animation-direction: alternate;
+            /* 
+            ease-in: start slow then end fast.
+            ease-out: start fast and end slow 
+            */
+            animation-timing-function: ease-in-out;
+
+            /* same animation with a single line */
+            /* animation-name | animation duration | animation-fill-mode | animation-delay | animation-timing-function */
+            animation: animate1 5s forwards 1s ease-in-out;
+         }
+         @keyframes animate1 {
+            from {
+               top: 0;
+            }
+            to {
+               width: 600px;
+               background-color: rgb(229, 14, 14);
+               top: 300px;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <div class="box"></div>
+   </body>
+</html>
